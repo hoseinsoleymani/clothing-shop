@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>فروشگاه شیک پوش</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.png" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/css-hamburgers/hamburgers.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/animsition/css/animsition.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/select2/select2.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/daterangepicker/daterangepicker.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/MagnificPopup/magnific-popup.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/perfect-scrollbar/perfect-scrollbar.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/styles-2.css" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="css/all.css" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="css/main.css" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!--===============================================================================================-->
+  </head>
+  <body class="animsition">
+    <!-- Header -->
+    <div class="wp-container">
+      <div class="header-navbar">
+        <div class="container">
+          <div class="header-content-navbar">
+            <a href="#" class="white"> حساب کاربری </a>
+
+            <h4 class="white head-title">
+              ایران شیک فروشگاه اینترنتی لباس شیک و به روز
+            </h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-menu-container">
+        <div class="container">
+          <nav>
+            <ul>
+              <li class="home"><a href="#">صفحه اصلی</a></li>
+              <li><a href="#">فروشگاه</a></li>
+              <li><a href="#">مجله</a></li>
+              <li><a href="#">خرید رایگان</a></li>
+              <li><a href="#">کسب درآمد</a></li>
+              <li><a href="#">درباره ما</a></li>
+              <li><a href="#">تماس با ما</a></li>
+            </ul>
+
+            <div class="user-profile respon-prof">
+              <div class="user-icon">
+                <div class="container-shoping-cart">
+                  <span class="buying-numebr"> 0 </span>
+                  <i class="fas fa-shopping-cart profile-icon"></i>
+                </div>
+                <i class="fas fa-search profile-icon open-search"></i>
+              </div>
+              <a href="#" class="logo"> ایران شیک </a>
+            </div>
+
+            <div class="responsive-prof">
+              <a href="#" class="logo"> ایران شیک </a>
+            </div>
+
+            <div class="user-profile responsive-prof">
+              <div class="user-icon d-flex align-items-center">
+                <div class="container-shoping-cart">
+                  <span class="buying-numebr"> 0 </span>
+                  <i class="fas fa-shopping-cart profile-icon"></i>
+                </div>
+                <i class="fas fa-search profile-icon open-search"></i>
+                <i class="fas fa-bars profile-icon"></i>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shopping cart background -->
+    <div class="shopp-back"></div>
+    <!-- Shopping Cart -->
+    <div class="shopping-cart">
+      <div class="d-flex align-items-center justify-content-between">
+        <span class="shopping-cart-title"> سبد خرید شما</span>
+        <i class="fa fa-times shop-times"></i>
+      </div>
+      <div class="products-container"></div>
+      <div>
+        <div class="total-product-container">
+          جمع قیمت: <span id="total"></span>
+        </div>
+        <div class="shopp-btns">
+          <button class="remove-product">خالی کردن سبد</button>
+        </div>
+      </div>
+    </div>
+    <!-- Search box -->
+    <div class="search-container">
+      <div class="search-box">
+        <img src="./images/times-icon.png" class="zabdar" />
+        <input type="search" class="search" placeholder="جستجو کنید" />
+        <img src="./images/search-icon.png" class="icon-search" />
+      </div>
+    </div>
+
+    <!-- Slider -->
+    <section class="section-slide">
+      <div class="wrap-slick1">
+        <div class="slick1">
+          <div
+            class="item-slick1"
+            style="background-image: url(images/slide-01.jpg)"
+          >
+            <div class="container h-full">
+              <div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
+                <div
+                  class="layer-slick1 animated visible-false"
+                  data-appear="fadeInDown"
+                  data-delay="0"
+                >
+                  <span class="ltext-101 cl2 respon2">
+                    لباس های زنانه سال نو ایران شیک
+                  </span>
+                </div>
+
+                <div
+                  class="layer-slick1 animated visible-false"
+                  data-appear="fadeInUp"
+                  data-delay="800"
+                >
+                  <h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
+                    کیفیت بالا
+                  </h2>
+                </div>
+
+                <div
+                  class="layer-slick1 animated visible-false"
+                  data-appear="zoomIn"
+                  data-delay="1600"
+                >
+                  <a
+                    href="product.html"
+                    class="
+                      flex-c-m
+                      stext-101
+                      cl0
+                      size-101
+                      bg1
+                      bor1
+                      hov-btn1
+                      p-lr-15
+                      trans-04
+                    "
+                  >
+                    حالا خرید کنید
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="item-slick1"
+            style="background-image: url(images/slide-03.jpg)"
+          >
+            <div class="container h-full">
+              <div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
+                <div
+                  class="layer-slick1 animated visible-false"
+                  data-appear="rotateInDownLeft"
+                  data-delay="0"
+                >
+                  <span class="ltext-101 cl2 respon2">
+                    لباس رایگان از فروشگاه ایران شیک تهیه کنید
+                  </span>
+                </div>
+
+                <div
+                  class="layer-slick1 animated visible-false"
+                  data-appear="rotateInUpRight"
+                  data-delay="800"
+                >
+                  <h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
+                    صد در صد تخفیف
+                  </h2>
+                </div>
+
+                <div
+                  class="layer-slick1 animated visible-false"
+                  data-appear="rotateIn"
+                  data-delay="1600"
+                >
+                  <a
+                    href="product.html"
+                    class="
+                      flex-c-m
+                      stext-101
+                      cl0
+                      size-101
+                      bg1
+                      bor1
+                      hov-btn1
+                      p-lr-15
+                      trans-04
+                    "
+                  >
+                    بزن بریم
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="item-slick1"
+            style="background-image: url(images/slide-04.jpg)"
+          >
+            <div class="container h-full">
+              <div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
+                <div
+                  class="layer-slick1 animated visible-false"
+                  data-appear="rollIn"
+                  data-delay="0"
+                >
+                  <span class="ltext-101 cl2 respon2">
+                    لباس های مردانه سال نو ایران شیک</span
+                  >
+                </div>
+
+                <div
+                  class="layer-slick1 animated visible-false"
+                  data-appear="lightSpeedIn"
+                  data-delay="800"
+                >
+                  <h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
+                    قیمت مناسب
+                  </h2>
+                </div>
+
+                <div
+                  class="layer-slick1 animated visible-false"
+                  data-appear="slideInUp"
+                  data-delay="1600"
+                >
+                  <a
+                    href="product.html"
+                    class="
+                      flex-c-m
+                      stext-101
+                      cl0
+                      size-101
+                      bg1
+                      bor1
+                      hov-btn1
+                      p-lr-15
+                      trans-04
+                    "
+                  >
+                    حالا خرید کنید
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="item-slick1"
+            style="background-image: url(images/slide-05.jpg)"
+          >
+            <div class="container h-full">
+              <div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
+                <div
+                  class="layer-slick1 animated visible-false"
+                  data-appear="rollIn"
+                  data-delay="0"
+                >
+                  <span class="ltext-101 cl2 respon2">
+                    لباس های مردانه سال نو ایران شیک</span
+                  >
+                </div>
+
+                <div
+                  class="layer-slick1 animated visible-false"
+                  data-appear="lightSpeedIn"
+                  data-delay="800"
+                >
+                  <h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
+                    قیمت مناسب
+                  </h2>
+                </div>
+
+                <div
+                  class="layer-slick1 animated visible-false"
+                  data-appear="slideInUp"
+                  data-delay="1600"
+                >
+                  <a
+                    href="product.html"
+                    class="
+                      flex-c-m
+                      stext-101
+                      cl0
+                      size-101
+                      bg1
+                      bor1
+                      hov-btn1
+                      p-lr-15
+                      trans-04
+                    "
+                  >
+                    حالا خرید کنید
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="item-slick1"
+            style="background-image: url(images/slide-06.jpg)"
+          >
+            <div class="container h-full">
+              <div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
+                <div
+                  class="layer-slick1 animated visible-false"
+                  data-appear="rollIn"
+                  data-delay="0"
+                >
+                  <span class="ltext-101 cl2 respon2">
+                    لباس های مردانه سال نو ایران شیک</span
+                  >
+                </div>
+
+                <div
+                  class="layer-slick1 animated visible-false"
+                  data-appear="lightSpeedIn"
+                  data-delay="800"
+                >
+                  <h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
+                    قیمت مناسب
+                  </h2>
+                </div>
+
+                <div
+                  class="layer-slick1 animated visible-false"
+                  data-appear="slideInUp"
+                  data-delay="1600"
+                >
+                  <a
+                    href="product.html"
+                    class="
+                      flex-c-m
+                      stext-101
+                      cl0
+                      size-101
+                      bg1
+                      bor1
+                      hov-btn1
+                      p-lr-15
+                      trans-04
+                    "
+                  >
+                    حالا خرید کنید
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="item-slick1"
+            style="background-image: url(images/slide-07.jpg)"
+          >
+            <div class="container h-full">
+              <div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
+                <div
+                  class="layer-slick1 animated visible-false"
+                  data-appear="rollIn"
+                  data-delay="0"
+                >
+                  <span class="ltext-101 cl2 respon2">
+                    لباس های مردانه سال نو ایران شیک</span
+                  >
+                </div>
+
+                <div
+                  class="layer-slick1 animated visible-false"
+                  data-appear="lightSpeedIn"
+                  data-delay="800"
+                >
+                  <h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
+                    قیمت مناسب
+                  </h2>
+                </div>
+
+                <div
+                  class="layer-slick1 animated visible-false"
+                  data-appear="slideInUp"
+                  data-delay="1600"
+                >
+                  <a
+                    href="product.html"
+                    class="
+                      flex-c-m
+                      stext-101
+                      cl0
+                      size-101
+                      bg1
+                      bor1
+                      hov-btn1
+                      p-lr-15
+                      trans-04
+                    "
+                  >
+                    حالا خرید کنید
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+      <section class="kinds-of-clothes section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 productions">
+              <div class="kind-of-card-clothes">
+                <div class="back-card">
+                  <h3 class="buy-title">خرید</h3>
+                  <hr size="2px" class="card-line" />
+                </div>
+                <div class="descriptions">
+                  <img src="images/baby.jpg" alt="بچه" class="baby" />
+                  <h3 class="title-baby">بچه گانه</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 productions">
+              <div class="kind-of-card-clothes">
+                <div class="back-card">
+                  <h3 class="buy-title">خرید</h3>
+                  <hr size="2px" class="card-line" />
+                </div>
+
+                <div class="descriptions">
+                  <img
+                    src="images/man-section-2.jpg"
+                    alt="مرد"
+                    class="man-card"
+                  />
+                  <h3>مردانه</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 productions">
+              <div class="kind-of-card-clothes women">
+                <div class="back-card">
+                  <h3 class="buy-title">خرید</h3>
+                  <hr size="2px" class="card-line" />
+                </div>
+                <div class="descriptions">
+                  <img src="images/women-section-2.jpg" alt="زنانه" />
+                  <h3>زنانه</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fetures section">
+        <div class="container">
+          <h1 class="fetures-title">
+            چرا <span class="blue"> ایران شیک </span> گزینه خرید ماست؟
+          </h1>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="feture">
+                <img src="images/svg-icon/guarantee.svg" alt="گارانتی" />
+                <p>گارانتی و ضمانت</p>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="feture">
+                <img src="images/svg-icon/order.svg" alt="وضعیت سفارشات" />
+                <p>وضعیت سفارشات</p>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="feture">
+                <img src="images/svg-icon/order.svg" alt="تحویل سریع" />
+                <p>تحویل در اسرع وقت</p>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="feture">
+                <img
+                  src="images/svg-icon/contorol-panel.svg"
+                  alt="پنل مدیریت شیک"
+                />
+                <p>پنل مدیریت شیک</p>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="feture">
+                <img
+                  src="images/svg-icon/original.svg"
+                  alt="محصولات اورجینال"
+                />
+                <p>محصولات اورجینال</p>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="feture">
+                <img src="images/svg-icon/securti.svg" alt="خرید امن" />
+                <p>خرید امن</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="kinds-of-clothes section">
+        <div class="container">
+          <h1 class="fetures-title">
+            دیگر محصولات <span class="blue"> ایران شیک </span>
+          </h1>
+
+          <div class="row row-1">
+            <div class="col-12 col-md-6 productions">
+              <div class="kind-of-card-clothes">
+                <div class="back-card">
+                  <h3 class="buy-title">خرید</h3>
+                  <hr size="2px" class="card-line" />
+                </div>
+
+                <div class="descriptions">
+                  <img
+                    src="images/men-provide.png"
+                    alt="مرد"
+                    class="human-card"
+                  />
+                  <div class="describtion-title">
+                    <h3>مردانه</h3>
+                    <p>جدیدترین برند ها</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 productions">
+              <div class="kind-of-card-clothes">
+                <div class="back-card">
+                  <h3 class="buy-title">خرید</h3>
+                  <hr size="2px" class="card-line" />
+                </div>
+
+                <div class="descriptions">
+                  <img
+                    src="images/women-provide.png"
+                    alt="زن"
+                    class="human-card women-small"
+                  />
+                  <div class="describtion-title">
+                    <h3>مردانه</h3>
+                    <p>جدیدترین برند ها</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 productions">
+              <div class="kind-of-card-clothes kind-of-card-clothes-2 rull">
+                <div class="back-card">
+                  <h3 class="buy-title">خرید</h3>
+                  <hr size="2px" class="card-line" />
+                </div>
+                <div class="descriptions">
+                  <div class="ruller-container">
+                    <img src="images/ruller.png" alt="بچه" class="ruller" />
+                  </div>
+                  <div class="describtion-title title-baby">
+                    <h3>اجزای اضافی</h3>
+                    <p>تکمیل شو</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 productions">
+              <div
+                class="
+                  kind-of-card-clothes
+                  kind-of-card-clothes-2
+                  kind-of-card-clothes-3
+                "
+              >
+                <div class="back-card">
+                  <h3 class="buy-title">خرید</h3>
+                  <hr size="2px" class="card-line" />
+                </div>
+
+                <div class="descriptions">
+                  <img src="images/bag.png" alt="مرد" class="each-other" />
+                  <div class="describtion-title title-baby">
+                    <h3>کیف</h3>
+                    <p>جذاب ترین طرح</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 productions">
+              <div
+                class="
+                  kind-of-card-clothes
+                  kind-of-card-clothes-2
+                  kind-of-card-clothes-3
+                "
+              >
+                <div class="back-card">
+                  <h3 class="buy-title">خرید</h3>
+                  <hr size="2px" class="card-line" />
+                </div>
+                <div class="descriptions">
+                  <img src="images/watch.png" alt="زنانه" class="each-other" />
+
+                  <div class="describtion-title title-baby">
+                    <h3>ساعت</h3>
+                    <p>شیک ترین شو</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slider-2 section">
+        <div class="container">
+          <h1 class="fetures-title">
+            مروری بر محصولات<span class="blue"> ایران شیک </span>
+          </h1>
+          <div class="change-provide">
+            <button type="button" id="new-provide">جدید</button>
+            <button type="button" id="popular">پرفروش</button>
+          </div>
+          <div class="tab-1 active opac">
+            <div class="owl-carousel owl-theme">
+              <div>
+                <div class="main-slide">
+                  <div class="img-slide">
+                    <img src="./images/new-img/women-10.jpg" alt="خانوم" />
+                    <button type="button" class="sea-img">خرید</button>
+                  </div>
+                  <div class="describtions-slide-2">
+                    <p class="text-center color-gray product-title">متالیک</p>
+                    <p class="text-center color-dark product-total"><span class="product-price">20000</span> تومان   </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="main-slide">
+                  <div class="img-slide">
+                    <img src="./images/new-img/women-11.jpg" alt="خانوم" />
+                    <button type="button" class="sea-img">خرید</button>
+                  </div>
+                  <div class="describtions-slide-2">
+                    <p class="text-center color-gray product-title">متالیک</p>
+                    <p class="text-center color-dark product-total"><span class="product-price">20000</span> تومان   </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="main-slide">
+                  <div class="img-slide">
+                    <img src="./images/new-img/watch-1.jpg" alt="خانوم" />
+                    <button type="button" class="sea-img">خرید</button>
+                  </div>
+                  <div class="describtions-slide-2">
+                    <p class="text-center color-gray product-title">متالیک</p>
+                    <p class="text-center color-dark product-total"><span class="product-price">20000</span> تومان   </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="main-slide">
+                  <div class="img-slide">
+                    <img src="./images/new-img/women-9.jpg" alt="خانوم" />
+                    <button type="button" class="sea-img">خرید</button>
+                  </div>
+                  <div class="describtions-slide-2">
+                    <p class="text-center color-gray product-title">متالیک</p>
+                    <p class="text-center color-dark product-total"><span class="product-price">20000</span> تومان   </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="main-slide">
+                  <div class="img-slide">
+                    <img src="./images/new-img/women-12.jpg" alt="خانوم" />
+                    <button type="button" class="sea-img">خرید</button>
+                  </div>
+                  <div class="describtions-slide-2">
+                    <p class="text-center color-gray product-title">متالیک</p>
+                    <p class="text-center color-dark product-total"><span class="product-price">20000</span> تومان   </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="main-slide">
+                  <div class="img-slide">
+                    <img src="./images/new-img/women-13.jpg" alt="خانوم" />
+                    <button type="button" class="sea-img">خرید</button>
+                  </div>
+                  <div class="describtions-slide-2">
+                    <p class="text-center color-gray product-title">متالیک</p>
+                    <p class="text-center color-dark product-total"><span class="product-price">20000</span> تومان   </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="main-slide">
+                  <div class="img-slide">
+                    <img src="./images/new-img/women-14.jpg" alt="خانوم" />
+                    <button type="button" class="sea-img">خرید</button>
+                  </div>
+                  <div class="describtions-slide-2">
+                    <p class="text-center color-gray product-title">متالیک</p>
+                    <p class="text-center color-dark product-total"><span class="product-price">20000</span> تومان   </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="main-slide">
+                  <div class="img-slide">
+                    <img src="./images/new-img/women-15.jpg" alt="خانوم" />
+                    <button type="button" class="sea-img">خرید</button>
+                  </div>
+                  <div class="describtions-slide-2">
+                    <p class="text-center color-gray product-title">متالیک</p>
+                    <p class="text-center color-dark product-total"><span class="product-price">20000</span> تومان   </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-2">
+            <div class="owl-carousel owl-theme">
+              <div>
+                <div class="main-slide">
+                  <div class="img-slide">
+                    <img src="./images/product-03.jpg" alt="خانوم" />
+                    <button type="button" class="sea-img">خرید</button>
+                  </div>
+                  <div class="describtions-slide-2">
+                    <p class="text-center color-gray product-title">متالیک</p>
+                    <p class="text-center color-dark product-total"><span class="product-price">20000</span> تومان   </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="main-slide">
+                  <div class="img-slide">
+                    <img src="./images/product-12.jpg" alt="خانوم" />
+                    <button type="button" class="sea-img">خرید</button>
+                  </div>
+                  <div class="describtions-slide-2">
+                    <p class="text-center color-gray product-title">متالیک</p>
+                    <p class="text-center color-dark product-total"><span class="product-price">20000</span> تومان   </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="main-slide">
+                  <div class="img-slide">
+                    <img src="./images/product-15.jpg" alt="خانوم" />
+                    <button type="button" class="sea-img">خرید</button>
+                  </div>
+                  <div class="describtions-slide-2">
+                    <p class="text-center color-gray product-title">متالیک</p>
+                    <p class="text-center color-dark product-total"><span class="product-price">20000</span> تومان   </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="main-slide">
+                  <div class="img-slide">
+                    <img src="./images/product-14.jpg" alt="خانوم" />
+                    <button type="button" class="sea-img">خرید</button>
+                  </div>
+                  <div class="describtions-slide-2">
+                    <p class="text-center color-gray product-title">متالیک</p>
+                    <p class="text-center color-dark product-total"><span class="product-price">20000</span> تومان   </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="main-slide">
+                  <div class="img-slide">
+                    <img src="./images/new-img/women-12.jpg" alt="خانوم" />
+                    <button type="button" class="sea-img">خرید</button>
+                  </div>
+                  <div class="describtions-slide-2">
+                    <p class="text-center color-gray product-title">متالیک</p>
+                    <p class="text-center color-dark product-total"><span class="product-price">20000</span> تومان   </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="main-slide">
+                  <div class="img-slide">
+                    <img src="./images/new-img/women-13.jpg" alt="خانوم" />
+                    <button type="button" class="sea-img">خرید</button>
+                  </div>
+                  <div class="describtions-slide-2">
+                    <p class="text-center color-gray product-title">متالیک</p>
+                    <p class="text-center color-dark product-total"><span class="product-price">20000</span> تومان   </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="main-slide">
+                  <div class="img-slide">
+                    <img src="./images/new-img/women-14.jpg" alt="خانوم" />
+                    <button type="button" class="sea-img">خرید</button>
+                  </div>
+                  <div class="describtions-slide-2">
+                    <p class="text-center color-gray product-title">متالیک</p>
+                    <p class="text-center color-dark product-total"><span class="product-price">20000</span> تومان   </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="main-slide">
+                  <div class="img-slide">
+                    <img src="./images/new-img/women-15.jpg" alt="خانوم" />
+                    <button type="button" class="sea-img">خرید</button>
+                  </div>
+                  <div class="describtions-slide-2">
+                    <p class="text-center color-gray product-title">متالیک</p>
+                    <p class="text-center color-dark product-total"><span class="product-price">20000</span> تومان   </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-8 col-md-6 col-lg-4 productions">
+            <h4>دسته بندی</h4>
+            <ul>
+              <li>
+                <a href="#">زنانه</a>
+              </li>
+              <li>
+                <a href="#">مردانه</a>
+              </li>
+              <li>
+                <a href="#">بچه گانه</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-sm-8 col-md-6 col-lg-4 productions">
+            <h4>درباره ایران شیک</h4>
+            <p>
+              ایران شیک یک سرویس کسب و کار اینترنتی است که محیطی چون بازار واقعی
+              را برای فروشندگان ایجاد کرده است که فروشندگان می توانند فعالیت
+              کنند و بازاریاب ها نیز بی بهره نباشند.
+            </p>
+            <div class="sotiol-media">
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-instagram"></i>
+              <i class="fa fa-pinterest-p"></i>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-8 col-md-6 col-lg-4 productions">
+            <h4>دنبال چه میگردی؟</h4>
+            <input
+              type="search"
+              class="footer-search-box"
+              placeholder="هر چه میخواهی بنویس"
+            />
+            <button type="button" class="btn-slide-1 footer-btn">جستجو</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Back to top -->
+    <div class="btn-back-to-top" id="myBtn">
+      <span class="symbol-btn-back-to-top">
+        <i class="fa fa-hand-o-up"></i>
+      </span>
+    </div>
+
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/slick/slick.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/slick-custom.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/main.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/Jquery.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/menu.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/second-slider.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/search.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/tab.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/shopping-cart.js"></script>
+    <!--===============================================================================================-->
+  </body>
+</html>
